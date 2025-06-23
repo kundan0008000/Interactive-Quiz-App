@@ -1,0 +1,165 @@
+.not-found {
+  min-height: 100vh;
+  padding: 60px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.not-found-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.error-illustration {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.error-number {
+  font-size: 8rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.1);
+  line-height: 1;
+  margin-bottom: -20px;
+}
+
+.error-emoji {
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: float 3s ease-in-out infinite;
+}
+
+.error-message {
+  margin-bottom: 40px;
+}
+
+.error-message h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.error-message p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.error-suggestions {
+  margin-bottom: 40px;
+  padding: 32px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.error-suggestions h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.error-suggestions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.error-suggestions li {
+  font-size: 1.125rem;
+  padding: 8px 0;
+  opacity: 0.9;
+}
+
+.error-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-large {
+  padding: 16px 32px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 12px;
+  min-width: 160px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: white;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .not-found {
+    padding: 40px 0;
+  }
+  
+  .error-number {
+    font-size: 6rem;
+  }
+  
+  .error-emoji {
+    font-size: 3rem;
+  }
+  
+  .error-message h1 {
+    font-size: 2rem;
+  }
+  
+  .error-message p {
+    font-size: 1.125rem;
+  }
+  
+  .error-suggestions {
+    padding: 24px;
+  }
+  
+  .error-suggestions h3 {
+    font-size: 1.25rem;
+  }
+  
+  .error-suggestions li {
+    font-size: 1rem;
+  }
+  
+  .error-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn-large {
+    width: 100%;
+    max-width: 300px;
+  }
+}
